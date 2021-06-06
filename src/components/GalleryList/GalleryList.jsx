@@ -9,7 +9,7 @@ function GalleryList(props) {
                 {props.gallery.map(exhibit => {
                     // send the objects to the galleryItem component
                     return (
-                        <GalleryItem key={exhibit.id} exhibit={exhibit}/>
+                        <GalleryItem key={exhibit.id} exhibit={exhibit} getGallery={props.getGallery}/>
                     )
                 })}
             </section>
